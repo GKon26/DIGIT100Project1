@@ -10,17 +10,39 @@
             It holds important information about the website's contents.
             The text inside the <title> element does show in the top tab of a web browser. 
              The <head> is where we will include info about styling the site, too. -->
-        <title>George Koncerak</title>
+        <title>Gallery</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Here is a place where we can add a little styling code called CSS to this page. 
             I used it to apply a background color to the body element.
         -->
         <style>
-            
             img {
-            width : 600px;
-            height: 600px;
+  border: 5px solid #00FFFF;
+}
+            * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.rowcentered {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+            img {
             object-fit: contain ;     
 }
              div.container {
@@ -52,25 +74,53 @@ ol.myOL {
             <h1 >Gallery!</h1>
             
             <h2 >A bunch of artwork over the years</h2>
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/blue.jpg" style="width:100%"/><figcaption>Earth propaganda art</figcaption></figure>
+                </div>
+                <div class="column">
+                   <figure><img src="images/proc.jpg" style="width:100%"/><figcaption>Digital Art: Procrastination</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/rocket.png" style="width:100%"/><figcaption>Space Exploration Table</figcaption></figure>
+                </div>
+            </div>
             
-            <figure>
-                <img src="images/blue.jpg"/>
-                <figcaption>Earth propaganda</figcaption>
-            </figure>
-            <figure>    
-            <img src="images/proc.jpg"/> 
-                <figcaption>Procrastination</figcaption>
-            </figure>
-                <figure><img src="images/rocket.png"/><figcaption>Table Rocket</figcaption> </figure>
-                <figure><img src="images/scott.jpg"/><figcaption>Drawing of Scott the Woz</figcaption> </figure>
-                <figure><img src="images/simps.jpg"/><figcaption>Cursed Simpsons</figcaption></figure>
-                <figure><img src="images/table.png"/><figcaption>A wonderful meal</figcaption></figure>
-                <figure><img src="images/tardis.png"/><figcaption>Tardis</figcaption></figure> 
-                <figure><img src="images/car.jpg"/><figcaption>Octane</figcaption></figure>
-                <figure><img src="images/mon.jpg"/><figcaption>Monster</figcaption></figure> 
-                <figure><img src="images/hand.jpg"/><figcaption>Cursed Hand</figcaption></figure> 
-                <figure><img src="images/snipe.jpg"/><figcaption>Wooden AWP</figcaption></figure> 
-                <figure><img src="images/sword.jpg"/><figcaption>The Monado made of foam</figcaption></figure>             
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/scott.jpg" style="width:100%"/><figcaption>Drawing of Scott the Woz</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/simps.jpg" style="width:100%"/><figcaption>Cursed Simpsons</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/table.png" style="width:100%"/><figcaption>A wonderful meal</figcaption></figure>
+                </div>
+            </div>
+              
+            <div class="rowcentered">
+                <div class="column">
+                   <figure><img src="images/tardis.png" style="width:100%"/><figcaption>Tardis</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/car.jpg" style="width:100%"/><figcaption>Octane</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/mon.jpg" style="width:100%"/><figcaption>Monster</figcaption></figure>
+                </div>
+            </div>
+            
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/hand.jpg" style="width:100%"/><figcaption>Cursed Hand</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/sword.jpg" style="width:100%"/><figcaption>The Monado made of foam</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/snipe.jpg" style="width:100%"/><figcaption>Wooden AWP</figcaption></figure>
+                </div>
+            </div>         
         </div>
     </body>
 </html>
