@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://www.w3.org/1999/xhtml" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="html">
+      <element name="head">
+        <element name="title">
+          <text/>
+        </element>
+        <oneOrMore>
+          <element name="meta">
+            <optional>
+              <attribute name="charset">
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="content"/>
+            </optional>
+            <optional>
+              <attribute name="name">
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+          </element>
+        </oneOrMore>
+        <element name="style">
+          <text/>
+        </element>
+      </element>
+      <element name="body">
+        <element name="div">
+          <attribute name="class">
+            <data type="NCName"/>
+          </attribute>
+          <oneOrMore>
+            <choice>
+              <element name="h1">
+                <optional>
+                  <attribute name="style"/>
+                </optional>
+                <text/>
+              </element>
+              <element name="h2">
+                <text/>
+              </element>
+              <element name="nav">
+                <oneOrMore>
+                  <choice>
+                    <text/>
+                    <ref name="a"/>
+                  </choice>
+                </oneOrMore>
+              </element>
+              <element name="ol">
+                <attribute name="class">
+                  <data type="NCName"/>
+                </attribute>
+                <attribute name="style"/>
+                <oneOrMore>
+                  <element name="li">
+                    <text/>
+                  </element>
+                </oneOrMore>
+              </element>
+              <element name="p">
+                <oneOrMore>
+                  <choice>
+                    <text/>
+                    <ref name="a"/>
+                  </choice>
+                </oneOrMore>
+              </element>
+            </choice>
+          </oneOrMore>
+          <element name="figure">
+            <element name="img">
+              <attribute name="src"/>
+            </element>
+            <element name="figcaption">
+              <text/>
+            </element>
+          </element>
+        </element>
+      </element>
+    </element>
+  </start>
+  <define name="a">
+    <element name="a">
+      <attribute name="href">
+        <data type="anyURI"/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+</grammar>
