@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Text Comparison</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+  border: 3px solid #000000;
+}
+            * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.rowcentered {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+            img {
+            object-fit: contain ;     
+}
+             div.container {
+              text-align: center;
+}
+ol.myOL {
+  display: inline-block;
+  text-align: left;
+}
+            body {
+                background: lightblue;
+            }
+            *{
+  font-family: "Arial Rounded MT Bold";
+}
+
+          </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 >George Koncerak</h1>
+            <nav >
+                <a href="index.html">Home</a> |
+                <a href="port.html">Portfolio</a> |
+                <a href="niggle.html">Twine Game</a> |
+                <a href="gallery.html">Gallery</a> |
+                <a href="tei_all.html">ODD Junk</a> |
+                <a href="reflec.html">Reflection </a> |
+                <a href="text.html">Text Comparison </a>
+            </nav>
+            <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
+            <h1 >Text Comparison</h1>
+            
+            <h2 >A comparison of the complete works of Edgar Allan Poe and Jane Austen</h2>
+            <p>I decided to compare the complete works of Edgar Allan Poe and Jane Austen. Both are quite substantial in size, but I was surprised to see Austen’s complete works are way larger than Poe’s.</p>
+                <p>I wanted to compare these two because both are fictional and are old. Seeing how two types of work would compare that share a similar genre and time intrigued me. In Poe’s works, the top </p>
+                <p>three words that show up the most are “said” with 661 results, “time” with 593 results and “little” with 583 results. For Austen’s works, “mr” with 3132 results, “mrs” with 2541 results </p>
+                <p>and “said” with 2167 results. You can tell that Austen’s works will be addressing people much more often that Poe’s by the fact two out of the top three are mr and mrs, with a total</p>
+                <p>of 5,673 results. Here are the clouds of each. Both have 55 words in the cloud.</p>
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/EAP.png" style="width:80%"/><figcaption>Edgar Allan Poe's Word Cloud</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/JA.png" style="width:80%"/><figcaption>Jane Austen's Word Cloud</figcaption></figure>
+                </div>
+            </div>
+            
+            <p>Edgar Allan Poe’s corpus is 443,344 total words and has 22,729 unique word forms. Jane Austen’s has 784,727 total words and 15,599 unique word forms. Poe has almost half as many words, but has</p> 
+                <p>over seven thousand more unique word forms. It’s very interesting for this to be the case. I’m assuming Poe repeats words much less often and uses unique words that don’t get used much. In</p> 
+                <p>Poe’s works “time” was one of the words that popped up a lot, with the following word being to, I, the and many others. “Time” showed up 595 times. In Austen’s, “time” was the 8th most</p> 
+                <p>frequent word, with 1434 results. Even though her works have almost twice as many words as Poe’s, time shows up more that 40% more often. Personally, I expected to see time show up</p> 
+                <p>more in Poe’s works, but having a much larger sample size helps in the frequency department. I like that time shows up so much in both works even though they have nothing to do with</p>
+                <p>other. In both TermsBerries, “said” connects to most of the other berries.</p>
+            
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/EAP2.png" style="width:70%"/><figcaption>Edgar Allan Poe's TermsBerry, focused on "said"</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/JA2.png" style="width:70%"/><figcaption>Jane Austen's TermsBerry, focused on "said"</figcaption></figure>
+                </div>
+            </div>
+              
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/EAP3.png" style="width:80%"/><figcaption>Graph of "said" usage in Edgar Allan Poe's works</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/JA3.png" style="width:80%"/><figcaption>Graph of "said" usage in Jane Austen's works</figcaption></figure>
+                </div>
+            </div>
+            
+            <p>For Poe’s works, setting the terms to 3, the most popular 3Gram is “one of the” with 184 results. For Austen’s, setting the terms to 3, the most popular 3Gram is “i do not” with 438 results. </p>
+            <p>Both works have a 3Gram that has a double as; "as well as" and "as soon as." Also an interesting note, "would have been" is the eighth most popular 3Gram in both works. They also both have</p>
+            <p>some instance of "could not"; "i could not" and "she could not." It's strange seeing how much they have in common even though they're completely different works.</p>
+            
+            <div class="rowcentered">
+                <div class="column">
+                    <figure><img src="images/EAP4.png" style="width:70%"/><figcaption>Top 10 3Grams in Edgar Allan Poe's works</figcaption></figure>
+                </div>
+                <div class="column">
+                    <figure><img src="images/JA4.png" style="width:70%"/><figcaption>Top 10 3Grams in Jane Austen's works</figcaption></figure>
+                </div>
+            </div>         
+        </div>
+    </body>
+</html>
+    
